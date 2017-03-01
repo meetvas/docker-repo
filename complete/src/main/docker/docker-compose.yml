@@ -1,0 +1,21 @@
+version: '2'
+services:
+  meetvas-blue:
+    image: meetvas/blue:v1
+    build: ../../../
+    ports:
+      - 8080
+  meetvas-green:
+    image: meetvas/green:v1
+    build: ../../../
+    ports:
+      - 8080    
+  meetvas-lb:
+    image: dockercloud/haproxy
+    links: 
+      - meetvas-blue
+    ports:
+      - 80:80
+      - 1936:1936
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
