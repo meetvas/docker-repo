@@ -17,7 +17,7 @@ public class Application {
 	
     @RequestMapping("/")
     public String home() throws Exception {
-    	return "Hello Docker World.....Server Host:"+request.getLocalAddr()+"...Updated";
+    	return "Hello Docker World.....Server Host:"+request.getLocalAddr()+"...Final Update for port";
     }
 
     public static void main(String[] args) {
