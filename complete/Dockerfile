@@ -5,7 +5,7 @@ ENV JAVA_VERSION 8u31
 ENV BUILD_VERSION b13
 
 # Upgrading system
-RUN yum -y upgrade
+#RUN yum -y upgrade
 RUN yum -y install wget
 
 # Downloading & Config Java 8
