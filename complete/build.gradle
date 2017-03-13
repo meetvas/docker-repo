@@ -48,7 +48,8 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web") 
+    compile("org.springframework.boot:spring-boot-starter-web")
+	compile("mysql:mysql-connector-java:5.1.6")
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
