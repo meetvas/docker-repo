@@ -4,16 +4,7 @@ server:
 #TODO: figure out why I need this here and in bootstrap.yml
 spring:
   application:
-    name: testLatticeApp
-  logging:
-    file: /tmp/dev_app.log
-    pattern:
-      console: "%d %-5level %logger : %msg%n"
-      file: "%d %-5level [%thread] %logger : %msg%n"
-    level:
-      org.springframework.web: DEBUG
-      hello: DEBUG
-      org.hibernate: DEBUG  
+    name: testLatticeApp 
 
 ribbon:
   ServerListRefreshInterval: 1000

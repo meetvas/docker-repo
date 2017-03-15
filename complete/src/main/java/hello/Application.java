@@ -21,15 +21,7 @@ public class Application {
 	
     @RequestMapping("/")
     public String home() throws Exception {
-    	/*try {
-    		System.out.println("jdbc:mysql://192.168.3.20:3306/mysql");	
-    	Class.forName("com.mysql.jdbc.Driver");
-    	Connection con=DriverManager.getConnection(	"jdbc:mysql://192.168.3.20:3306/mysql-galera","root","mypassword");
-    	con.close();
-    	} catch(Exception e) {
-    		System.out.println(e);
-    	}*/
-    	
+    	System.out.println("this is first test for logs");
     	log.debug("debug message");
     	log.warn("warn message");
     	log.info("info message");
