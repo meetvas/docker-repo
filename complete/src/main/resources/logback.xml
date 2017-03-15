@@ -1,0 +1,14 @@
+<configuration debug="true" scan="true" scanPeriod="30 seconds">
+	<property name="LOG_PATH" value="logs" />
+	<property name="LOG_ARCHIVE" value="${LOG_PATH}/archive" />
+	<appender name="File-Appender" class="ch.qos.logback.core.FileAppender">
+		<file>/tmp/application.log</file>
+		<encoder>
+			<Pattern>%date %level [%thread] %logger %msg%n</Pattern>
+			<outputPatternAsHeader>true</outputPatternAsHeader>
+		</encoder>
+	</appender>
+	<root level="debug">
+        <appender-ref ref="File-Appender" />
+    </root>
+</configuration>
